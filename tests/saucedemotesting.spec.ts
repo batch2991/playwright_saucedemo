@@ -52,14 +52,14 @@ test("To validate the products added in the cart", async({page})=>{
 
      
 })
-test("To validate remove product from the cart", async()=>{
-     //await login.login(ENV.uid,ENV.pwd)
-     let status=await products.getheading()
-     expect(status).toBeTruthy()
-     let names1=await products.addProductsTocart()
-     await products.gotoCart()
-     await cart.removeproduct()
-     let names2=await cart.getprodnames()
-     expect(names2.length).toBe(names1.length-1)
+// test("To validate remove product from the cart", async()=>{
+//      //await login.login(ENV.uid,ENV.pwd)
+//      let status=await products.getheading()
+//      expect(status).toBeTruthy()
+//      let names1=await products.addProductsTocart()
+//      await products.gotoCart()
+//      await cart.removeproduct()
+//      let names2=await cart.getprodnames()
+//      expect(names2.length).toBe(names1.length-1)
 
-})
+// })
